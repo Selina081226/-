@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作者的话 - 姜宥灿</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pixel', sans-serif;
+      background: linear-gradient(135deg, #f4c7e7, #e8d0f2);
+      color: #4a4a4a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header {
+      font-size: 36px;
+      color: #f58d88;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .content {
+      font-size: 20px;
+      color: #333;
+      line-height: 1.8;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 25px;
+      background-color: #7c98e4;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #5e74b5;
+    }
+
+    .cute-elements {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      right: 10%;
+      bottom: 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0.3;
+      animation: floating 5s infinite ease-in-out;
+    }
+
+    .cute-element {
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+
+    .cute-element1 {
+      background-image: url('https://img.icons8.com/ios/452/piggy-bank.png');
+    }
+
+    .cute-element2 {
+      background-image: url('https://img.icons8.com/ios/452/star.png');
+    }
+
+    .cute-element3 {
+      background-image: url('https://img.icons8.com/ios/452/heart.png');
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* 小屏幕适配 */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .header {
+        font-size: 28px;
+      }
+
+      .content {
+        font-size: 18px;
+      }
+
+      .back-button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      我要给读者说的话
+    </div>
+
+    <div class="content">
+      <p>
+        亲爱的读者，感谢你们的支持，姜宥灿的故事才刚刚开始。这个故事像是空中的流星，闪耀一瞬，却又带有深沉的温度。希望你们在这个小小的世界里，找寻属于你们自己的共鸣。
+      </p>
+      <p>
+        每个字，都是我情感的寄托，每段文字，都是我与世界对话的桥梁。你们的阅读，是我创作的意义，而我也会继续在这条路上走得更远。
+      </p>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='index.html'">返回主页</button>
+
+    <div class="cute-elements">
+      <div class="cute-element cute-element1"></div>
+      <div class="cute-element cute-element2"></div>
+      <div class="cute-element cute-element3"></div>
+    </div>
+  </div>
+</body>
+</html>

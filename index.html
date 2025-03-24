@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>角色主页</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://img10.360buyimg.com/imgzone/jfs/t1/284542/12/7070/85907/67de59caF208b830c/b5edc0d38b85f728.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #4f6b98;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.7);
+      width: 85%;
+      max-width: 1200px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(8px);
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 32px;
+      color: #6a87b5;
+    }
+    .header p {
+      font-size: 18px;
+      color: #6a87b5;
+    }
+    .character-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #6c87d1;
+      background-image: url('https://img10.360buyimg.com/imgzone/jfs/t1/276618/19/7831/68263/67de5a0dF2a707ccb/4c9787c65c6d205c.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+    .navigation-buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .nav-btn {
+      padding: 10px 20px;
+      background-color: #7c98e4;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .nav-btn:hover {
+      background-color: #5e74b5;
+    }
+    .music-player {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .music-player audio {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .music-player button {
+      padding: 10px 20px;
+      background-color: #7c98e4;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .music-player button:hover {
+      background-color: #5e74b5;
+    }
+    .mood-description {
+      margin-top: 30px;
+      padding: 10px;
+      border: 1px solid #6a87b5;
+      border-radius: 10px;
+      background-color: rgba(106, 135, 181, 0.1);
+      font-size: 16px;
+      color: #333;
+      width: 100%;
+      text-align: center;
+    }
+    .floating-images {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      width: 90%;
+      padding: 0 5%;
+    }
+    .floating-image {
+      width: 100px;
+      height: 130px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .floating-image:hover {
+      transform: scale(1.1);
+    }
+    .floating-image:nth-child(1) {
+      background-image: url('https://s3.bmp.ovh/imgs/2025/03/23/3454e521644d7e02.jpeg');
+    }
+    .floating-image:nth-child(2) {
+      background-image: url('https://s3.bmp.ovh/imgs/2025/03/23/06d16f776ac282cc.jpeg');
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .header h1 {
+        font-size: 24px;
+      }
+      .music-player button {
+        padding: 8px 16px;
+      }
+      .floating-images {
+        top: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>姜宥灿</h1>
+      <p>“时间倒流的记忆，凝结成凝霜。那无尽星空下的约定，如影随形，永不凋零。”</p>
+    </div>
+    <div class="character-image"></div>
+    <div class="navigation-buttons">
+      <button class="nav-btn" onclick="location.href='profile.html'">资料</button>
+      <button class="nav-btn" onclick="location.href='essay.html'">随笔</button>
+      <button class="nav-btn" onclick="location.href='author.html'">作者的话</button>
+    </div>
+    <div class="music-player">
+      <audio controls>
+        <source src="https://music.163.com/song/media/outer/url?id=1999750254.mp3" type="audio/mpeg">
+      </audio>
+      <button>播放音乐</button>
+    </div>
+    <div class="mood-description">
+      <p>心情：静默之美</p>
+      <p>今天是一个平静的日子，回忆起过去的时光，心中充满宁静与思索。</p>
+    </div>
+    <div class="floating-images">
+      <div class="floating-image"></div>
+      <div class="floating-image"></div>
+    </div>
+  </div>
+  <div class="background-decoration"></div>
+</body>
+</html>

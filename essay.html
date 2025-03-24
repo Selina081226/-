@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>随笔 - 姜宥灿</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #f0c0c0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #f0c0c0;
+      text-align: justify;
+    }
+
+    /* 设置标题样式 */
+    .container .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container .header h1 {
+      font-size: 36px;
+      color: #f0c0c0;
+      font-weight: bold;
+    }
+
+    .container .header p {
+      font-size: 20px;
+      color: #f0c0c0;
+      margin-top: 10px;
+    }
+
+    /* 内容区域字体渐显效果 */
+    .content {
+      font-size: 20px;
+      color: #f0c0c0;
+      line-height: 1.6;
+      margin-top: 20px;
+      padding-right: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+      text-align: left;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    /* 添加字体渐显效果 */
+    .content p {
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+
+    /* 定义渐显动画 */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 背景装饰 */
+    .background-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://img10.360buyimg.com/imgzone/jfs/t1/284542/12/7070/85907/67de59caF208b830c/b5edc0d38b85f728.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      filter: blur(10px);
+    }
+
+    /* 返回按钮样式 */
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 24px;
+      background-color: #7c98e4;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #5e74b5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>随笔</h1>
+      <p>姜宥灿的心情随笔</p>
+    </div>
+    <div class="content">
+      <p>
+
+        世界是一场慢性的白噪梦，而姜宥灿恰巧被遗落在了梦与梦之间。他不属于清晨，也不属于深夜，他在两者之间游离，像是被沉默反复咀嚼后吐出的幽影。
+
+        他总是静静坐在教堂遗址的长椅上，耳边回荡的是不存在的钟声，那声音像冰在骨头中裂开。某些午后，他会望着教室玻璃窗上映着天光的灰蓝发呆，好像能看见另一个版本的自己正从楼梯间坠落，却悄无声息。
+
+        姜宥灿活在一个循环逻辑崩坏的盒子里，每一次眼神的转动都是一个新宇宙的塌缩。他说过，如果灵魂真的有重量，那他每天都在被缓慢压扁。不是被生活压垮，而是被无意义温柔地捶打成雾。
+
+        雨水顺着他额角滑落，在他脖颈堆出时间的涟漪。他不避雨，也不撑伞。他说这是在让命运重新写他一遍。他不反抗命运，只是静静腐烂，带着一点点近乎怜悯的诗意。
+
+        他爱过一个人。那是一束坐在花房窗边的光，是他存在的锚点，也是他幻想崩塌的起点。后来那光走了，他继续坐在原地，像从来没有发生过。他用沉默赎回尊严，用失忆对抗热烈，用反复梦到的墙壁与水声将自己隔绝于“人”的边界之外。
+
+        每当午夜将近，他便会在某个页面上打下一行字：“活着，就是经历荒谬。”然后删掉。
+
+        没人知道他是否真实存在。他可能只是某人妄想出的角色，一块破布里落下的一缕影，或是城市垃圾桶上写着“告别童年”的蓝色粉笔字。他太像一封没有落款的信，被塞进世界的缝隙，静静等待谁来拆开，却注定没人阅读。
+
+        他是雾，是谜，是梦的边缘。
+
+        他是姜宥灿。
+      </p>
+    </div>
+    <button class="back-button" onclick="window.location.href='index.html'">返回主页</button>
+  </div>
+  <div class="background-decoration"></div>
+</body>
+</html>
