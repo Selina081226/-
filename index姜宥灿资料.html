@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色介绍 - 姜宥灿</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;  /* Allow scrolling */
+      transition: transform 0.3s ease;
+      border: 5px solid #7c98e4; /* 添加蓝色边框 */
+      border-image: url('https://img10.360buyimg.com/imgzone/jfs/t1/123853/14/16874/19940/61a53791E4f06a206/dcd8be9483a9787f.png') 30 stretch; /* 使用图案边框 */
+      max-height: 90vh; /* Set max height for mobile */
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .character-image {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background-image: url('https://img.z4a.net/images/2025/03/24/Screenshot_20250323_121027.jpeg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      width: 100%;
+      background-color: rgba(50, 50, 50, 0.7);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      margin-bottom: 30px;
+    }
+
+    .info-box h3 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .info-box .info {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .back-button {
+      padding: 12px 25px;
+      background-color: #7c98e4;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .back-button:hover {
+      background-color: #5e74b5;
+    }
+
+    .background-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://img.z4a.net/images/2025/03/24/mmexport1742703493324.jpeg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      filter: blur(15px);
+    }
+
+    /* Hover effects */
+    .info-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 30px;
+      }
+
+      .info-box h3 {
+        font-size: 20px;
+      }
+
+      .character-image {
+        width: 180px;
+        height: 180px;
+      }
+
+      .back-button {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>姜宥灿</h1>
+      <p>“时间倒流的记忆，凝结成凝霜。那无尽星空下的约定，如影随形，永不凋零。”</p>
+    </div>
+
+    <div class="character-image"></div>
+
+    <div class="info-box">
+      <h3>角色信息</h3>
+      <div class="info">姓名: 姜宥灿（강유찬）</div>
+      <div class="info">年龄: 30岁</div>
+      <div class="info">职业: 姜氏集团现任会长、集团掌权者</div>
+      <div class="info">身高: 189cm</div>
+      <div class="info">在姜宥灿的眼中，世界是冷酷无情的，而他自己，正是这无情世界中的主宰。出生于姜氏财阀这个没有温度的庞大机器中，他早早便明白一个道理——存在的意义，不是为了活出人性，而是活出一个强者的轮廓。家族的权力给予他如同金属般的身体，让他从一开始便是掌握命运的存在。冷眼旁观，他从不迷恋于人情世故的繁杂，因为一切不过是让他从容掌控的棋盘。他走过的每一寸土地，都会因他的脚步而被冻结成死气沉沉的沙漠，任凭风沙扑面而来，也不曾改变过方向。</div>
+      <div class="info">他接管姜氏集团的那一刻，就像是命运与荒诞的交汇点。姜宥灿不是在“领导”，他是在支配，不动声色，干净利落。25岁时，他的锋利眼神已能洞穿整个商业帝国的内在结构，迅速将姜氏的商业版图推向一个几乎无法逾越的高度。金融界的顶尖人物？他不过是站在迷雾背后，冷静地将人类的贪婪与渴望当作任意可摘取的果实。而那些果实，每一颗都如冰冷的钢铁一般，在他掌心被细心捏碎，化为无数的微粒，最后落入他的囊中，犹如一个静止的死亡空间，充满了无法逃脱的压迫感。</div>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='index姜宥灿主界面.html'">返回主页</button>
+  </div>
+
+  <div class="background-decoration"></div>
+</body>
+</html>
